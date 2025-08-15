@@ -7,71 +7,7 @@
   <link rel="stylesheet" href="stylt.css">
   <style>
 
-    /* body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      background-color: #f9f9f9;
-      color: #333;
-      margin: 0;
-      padding: 0;
-    }
-    .container {
-      max-width: 500px;
-      margin: auto;
-      padding: 20px;
-    }
-    h1 {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-    }
-    .dark-mode {
-      background-color: #121212;
-      color: white;
-    }
-    button {
-      margin: 10px 0;
-      padding: 10px 20px;
-      cursor: pointer;
-      border: none;
-      background-color: #333;
-      color: white;
-      border-radius: 5px;
-    }
-    .dark-mode button {
-      background-color: white;
-      color: black;
-    }
-    .contact-card {
-      background: white;
-      padding: 10px;
-      margin: 10px 0;
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    .dark-mode .contact-card {
-      background: #1e1e1e;
-    }
-    .contact-card img {
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      object-fit: cover;
-    }
-    input {
-      padding: 8px;
-      width: calc(100% - 20px);
-      margin: 5px 0;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-    input[type="file"] {
-      padding: 3px;
-    } */
+   
   </style>
 </head>
 <body>
@@ -90,50 +26,6 @@
     <button id="addContact">➕ Add Contact</button>
   </div>
  <script src="script.js"></script>
-  <!-- <script>
-    const themeToggle = document.getElementById('themeToggle');
-    const body = document.body;
-
-    themeToggle.addEventListener('click', () => {
-      body.classList.toggle('dark-mode');
-      themeToggle.textContent = body.classList.contains('dark-mode') ? '☀️ Light Mode' : '🌙 Dark Mode';
-    });
-
-    document.getElementById('addContact').addEventListener('click', () => {
-      const name = document.getElementById('name').value.trim();
-      const email = document.getElementById('email').value.trim();
-      const phone = document.getElementById('phone').value.trim();
-      const imageFile = document.getElementById('image').files[0];
-
-      if (!name || !email || !phone) {
-        alert('Please fill out all fields');
-        return;
-      }
-
-      let imageURL = "https://via.placeholder.com/60";
-      if (imageFile) {
-        imageURL = URL.createObjectURL(imageFile);
-      }
-
-      const contactCard = document.createElement('div');
-      contactCard.classList.add('contact-card');
-      contactCard.innerHTML = `
-        <img src="${imageURL}" alt="${name}">
-        <div>
-          <strong>${name}</strong><br>
-          📧 ${email}<br>
-          📞 ${phone}
-        </div>
-      `;
-
-      document.getElementById('contactsList').appendChild(contactCard);
-
-      // Reset form
-      document.getElementById('name').value = '';
-      document.getElementById('email').value = '';
-      document.getElementById('phone').value = '';
-      document.getElementById('image').value = '';
-    });
-  </script> -->
+  
 </body>
 </html>
